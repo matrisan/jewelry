@@ -1,4 +1,4 @@
-package com.github.jewelry.pojo.orm;
+package com.github.jewelry.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;

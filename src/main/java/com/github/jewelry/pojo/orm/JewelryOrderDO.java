@@ -1,5 +1,6 @@
 package com.github.jewelry.pojo.orm;
 
+import com.github.jewelry.pojo.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

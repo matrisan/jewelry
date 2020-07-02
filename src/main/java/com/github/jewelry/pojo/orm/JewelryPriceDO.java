@@ -1,5 +1,6 @@
 package com.github.jewelry.pojo.orm;
 
+import com.github.jewelry.pojo.BaseEntity;
 import com.github.jewelry.pojo.bo.DetailBO;
 import com.github.jewelry.pojo.converter.DetailConverter;
 import lombok.AllArgsConstructor;
