@@ -1,6 +1,5 @@
 package com.github.jewelry.service.impl;
 
-import com.github.jewelry.pojo.orm.JewelryPriceDO;
 import com.github.jewelry.pojo.vo.IJewelryCalendarVO;
 import com.github.jewelry.pojo.vo.IJewelryMeasureVO;
 import com.github.jewelry.pojo.vo.IJewelryNewsVO;
