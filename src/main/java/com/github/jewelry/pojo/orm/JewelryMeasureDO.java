@@ -7,14 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
-import org.hibernate.annotations.Where;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.Table;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * @author 石少东
@@ -22,17 +15,13 @@ import javax.persistence.Table;
  * @since 1.0
  */
 
-@Getter
 @Setter
+@Getter
 @Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Where(clause = "deleted = false or deleted is null")
-@Table(name = "JewelryMeasureDO")
-@DynamicInsert
-@DynamicUpdate
-@EntityListeners(AuditingEntityListener.class)
+@Document(collection = "JewelryMeasureDO")
 public class JewelryMeasureDO extends BaseEntity {
+    private String name;
 }

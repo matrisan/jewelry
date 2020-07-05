@@ -2,23 +2,15 @@ package com.github.jewelry.pojo.orm;
 
 import com.github.jewelry.pojo.BaseEntity;
 import com.github.jewelry.pojo.bo.DetailBO;
-import com.github.jewelry.pojo.converter.DetailConverter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
-import org.hibernate.annotations.Where;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Convert;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.Table;
-import java.util.List;
+import java.util.Map;
 
 /**
  * @author 石少东
@@ -26,24 +18,16 @@ import java.util.List;
  * @since 1.0
  */
 
-@Getter
 @Setter
+@Getter
 @Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Where(clause = "deleted = false or deleted is null")
-@Table(name = "JewelryPriceDO")
-@DynamicInsert
-@DynamicUpdate
-@EntityListeners(AuditingEntityListener.class)
+@Document(collection = "JewelryPriceDO")
 public class JewelryPriceDO extends BaseEntity {
 
-    private String name;
-
-    @Convert(converter = DetailConverter.class)
-    private List<DetailBO> details;
+    private Map<String, DetailBO> details;
 
 }
 

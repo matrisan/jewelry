@@ -1,5 +1,6 @@
 package com.github.jewelry.service;
 
+import com.github.jewelry.pojo.orm.JewelryPriceDO;
 import com.github.jewelry.pojo.vo.IJewelryCalendarVO;
 import com.github.jewelry.pojo.vo.IJewelryMeasureVO;
 import com.github.jewelry.pojo.vo.IJewelryNewsVO;
@@ -15,15 +16,16 @@ import com.github.jewelry.pojo.vo.IJewelryPriceVO;
 
 public interface IJewelryService {
 
-    IJewelryPriceVO  getJewelryPrice();
+    IJewelryPriceVO getJewelryPrice();
+//    JewelryPriceDO getJewelryPrice();
 
-     IJewelryNewsVO  getJewelryNews();
+    IJewelryNewsVO getJewelryNews();
 
-     IJewelryOrderVO  getJewelryOrder();
+    IJewelryOrderVO getJewelryOrder();
 
-     IJewelryCalendarVO  getJewelryCalendar();
+    IJewelryCalendarVO getJewelryCalendar();
 
-     IJewelryMeasureVO  getJewelryMeasure();
+    IJewelryMeasureVO getJewelryMeasure();
 
 
 }

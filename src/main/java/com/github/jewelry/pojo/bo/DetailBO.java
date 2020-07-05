@@ -1,5 +1,6 @@
 package com.github.jewelry.pojo.bo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,14 +18,19 @@ import lombok.ToString;
 @ToString
 public class DetailBO {
 
-    private String goods;
+    @JsonProperty("xiaoshou")
+    private String xiaoShou;
 
-    private String repo;
+    @JsonProperty("huigou")
+    private String huiGou;
 
-    private String sell;
+    @JsonProperty("high")
+    private String high;
 
-    private String highPrice;
+    @JsonProperty("low")
+    private String low;
 
-    private String lowPrice;
+    @JsonProperty("xianhuo")
+    private String xianHuo;
 
 }

@@ -2,6 +2,7 @@ package com.github.jewelry.controller.impl;
 
 import com.github.jewelry.controller.IJewelryController;
 import com.github.jewelry.pojo.dto.ResultVO;
+import com.github.jewelry.pojo.orm.JewelryPriceDO;
 import com.github.jewelry.pojo.vo.IJewelryCalendarVO;
 import com.github.jewelry.pojo.vo.IJewelryMeasureVO;
 import com.github.jewelry.pojo.vo.IJewelryNewsVO;
@@ -31,6 +32,10 @@ public class JewelryControllerImpl implements IJewelryController {
     public ResultVO<IJewelryPriceVO> getJewelryPrice() {
         return ResultVO.success(service.getJewelryPrice());
     }
+//    @Override
+//    public ResultVO<JewelryPriceDO> getJewelryPrice() {
+//        return ResultVO.success(service.getJewelryPrice());
+//    }
 
     @GetMapping("/news")
     @Override

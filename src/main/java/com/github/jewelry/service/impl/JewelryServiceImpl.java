@@ -1,5 +1,6 @@
 package com.github.jewelry.service.impl;
 
+import com.github.jewelry.pojo.orm.JewelryPriceDO;
 import com.github.jewelry.pojo.vo.IJewelryCalendarVO;
 import com.github.jewelry.pojo.vo.IJewelryMeasureVO;
 import com.github.jewelry.pojo.vo.IJewelryNewsVO;
@@ -26,8 +27,12 @@ public class JewelryServiceImpl implements IJewelryService {
 
     @Override
     public IJewelryPriceVO getJewelryPrice() {
-        return null;
+        return repository.findFirstByOrderByCreateDateDesc(IJewelryPriceVO.class);
     }
+//    @Override
+//    public JewelryPriceDO getJewelryPrice() {
+//        return repository.findFirstByOrderByCreateDateDesc();
+//    }
 
     @Override
     public IJewelryNewsVO getJewelryNews() {
