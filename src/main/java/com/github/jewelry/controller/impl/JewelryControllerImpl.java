@@ -32,33 +32,29 @@ public class JewelryControllerImpl implements IJewelryController {
     public ResultVO<IJewelryPriceVO> getJewelryPrice() {
         return ResultVO.success(service.getJewelryPrice());
     }
+
+//    @GetMapping("/news")
 //    @Override
-//    public ResultVO<JewelryPriceDO> getJewelryPrice() {
-//        return ResultVO.success(service.getJewelryPrice());
+//    public ResultVO<IJewelryNewsVO> getJewelryNews() {
+//        return ResultVO.success(service.getJewelryNews());
 //    }
-
-    @GetMapping("/news")
-    @Override
-    public ResultVO<IJewelryNewsVO> getJewelryNews() {
-        return ResultVO.success(service.getJewelryNews());
-    }
-
-    @GetMapping("/order")
-    @Override
-    public ResultVO<IJewelryOrderVO> getJewelryOrder() {
-        return ResultVO.success(service.getJewelryOrder());
-    }
-
-    @GetMapping("/calendar")
-    @Override
-    public ResultVO<IJewelryCalendarVO> getJewelryCalendar() {
-        return ResultVO.success(service.getJewelryCalendar());
-    }
-
-    @GetMapping("/measure")
-    @Override
-    public ResultVO<IJewelryMeasureVO> getJewelryMeasure() {
-        return ResultVO.success(service.getJewelryMeasure());
-    }
+//
+//    @GetMapping("/order")
+//    @Override
+//    public ResultVO<IJewelryOrderVO> getJewelryOrder() {
+//        return ResultVO.success(service.getJewelryOrder());
+//    }
+//
+//    @GetMapping("/calendar")
+//    @Override
+//    public ResultVO<IJewelryCalendarVO> getJewelryCalendar() {
+//        return ResultVO.success(service.getJewelryCalendar());
+//    }
+//
+//    @GetMapping("/measure")
+//    @Override
+//    public ResultVO<IJewelryMeasureVO> getJewelryMeasure() {
+//        return ResultVO.success(service.getJewelryMeasure());
+//    }
 
 }

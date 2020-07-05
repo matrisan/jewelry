@@ -18,14 +18,13 @@ import com.github.jewelry.pojo.vo.IJewelryPriceVO;
 public interface IJewelryController {
 
     ResultVO<IJewelryPriceVO> getJewelryPrice();
-//    ResultVO<JewelryPriceDO> getJewelryPrice();
 
-    ResultVO<IJewelryNewsVO> getJewelryNews();
-
-    ResultVO<IJewelryOrderVO> getJewelryOrder();
-
-    ResultVO<IJewelryCalendarVO> getJewelryCalendar();
-
-    ResultVO<IJewelryMeasureVO> getJewelryMeasure();
+//    ResultVO<IJewelryNewsVO> getJewelryNews();
+//
+//    ResultVO<IJewelryOrderVO> getJewelryOrder();
+//
+//    ResultVO<IJewelryCalendarVO> getJewelryCalendar();
+//
+//    ResultVO<IJewelryMeasureVO> getJewelryMeasure();
 
 }
