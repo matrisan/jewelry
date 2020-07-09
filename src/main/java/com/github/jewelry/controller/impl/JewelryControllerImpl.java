@@ -5,6 +5,7 @@ import com.github.jewelry.pojo.dto.ResultVO;
 import com.github.jewelry.pojo.vo.IJewelryPriceVO;
 import com.github.jewelry.service.IJewelryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 1.0
  */
 
+@CrossOrigin
 @RequestMapping("/jewelry")
 @RestController
 @RequiredArgsConstructor
